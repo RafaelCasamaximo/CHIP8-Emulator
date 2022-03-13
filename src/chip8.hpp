@@ -1,6 +1,10 @@
 #pragma once
 
+#include <chrono>
 #include <cstdint>
+#include <cstring>
+#include <fstream>
+#include <random>
 
 class Chip8
 {
@@ -118,6 +122,7 @@ public:
     // MÉTODOS
     Chip8();
     void LoadROM(char const* filename);
+    void Cycle();
     
 };
 
